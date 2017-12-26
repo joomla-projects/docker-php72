@@ -11,7 +11,7 @@ RUN apt-get update \
     curl mysql-client wget postgresql-client \
     php7.2 php7.2-common php7.2-memcache php7.2-memcached php7.2-redis php-xdebug  \
     php7.2-gd php7.2-gettext php7.2-mbstring php-mcrypt php7.2-mysql php7.2-sqlite3 \
-    php7.2-pgsql php7.2-curl php7.2-ldap php7.2-zip \
+    php7.2-pgsql php7.2-curl php7.2-ldap php7.2-zip php7.2-xml \
     composer \
 		&& sed -i 's/memory_limit\s*=.*/memory_limit=-1/g' /etc/php/7.2/cli/php.ini \
     && apt-get clean \
